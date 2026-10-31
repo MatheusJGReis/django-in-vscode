@@ -45,55 +45,6 @@ Add the following item to the **Emmet: Include Languages** settings:
 | ------------- | ------ |
 | `django-html` | `html` |
 
-## Sponsors
+## About this fork
 
-- [tpberntsen](https://github.com/tpberntsen)
-- [moving-content](https://github.com/moving-content)
-
-[![Paypal](https://img.shields.io/static/v1?label=Paypal&message=€66&logo=Paypal&color=009cde&link=https://www.paypal.com/paypalme/batisteo/5)](https://www.paypal.com/paypalme/batisteo/5)
-[![Github Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=6%C2%A0%E2%9D%A4&logo=GitHub&color=ea4aaa&link=https://github.com/sponsor/batisteo)](https://github.com/sponsor/batisteo)
-
-## Contributing
-
-### Issues
-
-Something odd? New feature request?
-Please [create an issue on Github](https://github.com/vscode-django/vscode-django/issues/new).
-
-### Setup
-
-```bash
-git clone https://github.com/vscode-django/vscode-django
-cd vscode-django
-npm install
-code .
-```
-
-It’s better to have [TSlint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint) installed.
-
-### Launching the extension debugger
-
-Make sure you have this snippet in `.vscode/launch.json`:
-
-```javascript
-{
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "Extension",
-      "type": "extensionHost",
-      "request": "launch",
-      "runtimeExecutable": "${execPath}",
-      "args": [
-        "--extensionDevelopmentPath=${workspaceFolder}"
-      ]
-    }
-  ]
-}
-```
-
-Press <kbd>F5</kbd> or click on Debug then Start (▶️) to launch the extension host window.
-
-Hack around
-
-Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F5</kbd> or 🔄 to reload.
+This project is a fork of [vscode-django](https://github.com/vscode-django/vscode-django), originally created by [Baptiste Darthenay](https://github.com/batisteo). This fork is maintained independently.

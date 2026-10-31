@@ -3,7 +3,6 @@
   "displayName": "Django",
   "description": "Beautiful syntax and scoped snippets for perfectionists with deadlines",
   "version": "1.15.0",
-  "publisher": "batisteo",
   "license": "MIT",
   "icon": "images/vscode-django-icon.png",
   "galleryBanner": {
@@ -16,13 +15,13 @@
   "recommendations": ["ms-python.python"],
   "keywords": ["python", "django", "web"],
   "categories": ["Programming Languages", "Snippets"],
-  "homepage": "https://github.com/vscode-django/vscode-django",
+  "homepage": "https://github.com/MatheusJGReis/django-in-vscode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vscode-django/vscode-django"
+    "url": "https://github.com/MatheusJGReis/django-in-vscode"
   },
   "bugs": {
-    "url": "https://github.com/vscode-django/vscode-django/issues"
+    "url": "https://github.com/MatheusJGReis/django-in-vscode/issues"
   },
   "activationEvents": [
     "onLanguage:django-html",
