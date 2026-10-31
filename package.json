@@ -1,8 +1,8 @@
 {
-  "name": "vscode-django",
-  "displayName": "Django",
+  "name": "django-in-vscode",
+  "displayName": "Django in VSCode",
   "description": "Beautiful syntax and scoped snippets for perfectionists with deadlines",
-  "version": "1.15.0",
+  "version": "1.0.0",
   "license": "MIT",
   "icon": "images/vscode-django-icon.png",
   "galleryBanner": {
