@@ -7,5 +7,7 @@ package-lock.json
 .venv
 .env
 **/__pycache__
+build/
+*.egg-info/
 .vscode-test/
 .vscode-test-web/

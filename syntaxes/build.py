@@ -4,7 +4,7 @@ from datetime import datetime
 import tomlkit
 
 SYNTAX_DIR = abspath(dirname(join("syntaxes", __name__)))
-SYNTAXES = ["django-html", "django-txt"]
+SYNTAXES = ["django-html", "django-xml", "django-txt"]
 
 
 def load(path):

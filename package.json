@@ -25,6 +25,7 @@
   },
   "activationEvents": [
     "onLanguage:django-html",
+    "onLanguage:django-xml",
     "onLanguage:django-txt",
     "onLanguage:python"
   ],
@@ -79,8 +80,15 @@
         "configuration": "./language-configuration.json"
       },
       {
+        "id": "django-xml",
+        "aliases": ["Django XML", "django"],
+        "filenamePatterns": ["**/templates/**/*.xml"],
+        "firstLine": "{%",
+        "configuration": "./language-configuration.json"
+      },
+      {
         "id": "django-txt",
-        "aliases": ["Django txt", "django"],
+        "aliases": ["Django Text", "django"],
         "filenamePatterns": ["**/templates/**/*"],
         "firstLine": "{%",
         "configuration": "./language-configuration.json"
@@ -91,6 +99,11 @@
         "language": "django-html",
         "scopeName": "text.html.django",
         "path": "./syntaxes/django-html.tmLanguage.json"
+      },
+      {
+        "language": "django-xml",
+        "scopeName": "text.xml.django",
+        "path": "./syntaxes/django-xml.tmLanguage.json"
       },
       {
         "language": "django-txt",
@@ -108,6 +121,14 @@
         "path": "./snippets/templates/filters.json"
       },
       {
+        "language": "django-xml",
+        "path": "./snippets/templates/tags.json"
+      },
+      {
+        "language": "django-xml",
+        "path": "./snippets/templates/filters.json"
+      },
+      {
         "language": "django-txt",
         "path": "./snippets/templates/tags.json"
       },
@@ -118,6 +139,13 @@
     ],
     "configurationDefaults": {
       "[django-html]": {
+        "editor.quickSuggestions": {
+          "other": true,
+          "comments": true,
+          "strings": true
+        }
+      },
+      "[django-xml]": {
         "editor.quickSuggestions": {
           "other": true,
           "comments": true,

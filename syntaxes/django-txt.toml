@@ -1,4 +1,4 @@
-name = "Django txt"
+name = "Django Text"
 scopeName = "text.django"
 fileTypes = ["txt"]
 

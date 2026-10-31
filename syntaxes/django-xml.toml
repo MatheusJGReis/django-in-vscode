@@ -1,0 +1,73 @@
+name = "Django XML"
+scopeName = "text.xml.django"
+fileTypes = ["xml"]
+
+repositories = [
+    "django-stuff",
+    "django-template-filter",
+    "django-template-tag-contrib",
+    "django-template-tag",
+    "entities",
+    "string-double-quoted",
+    "string-single-quoted",
+    "tag-generic-attribute",
+]
+
+[repository]
+
+[[patterns]]
+include = "#django-stuff"
+
+[[patterns]]
+begin = "<!--"
+end = "-->"
+name = "comment.block.xml"
+
+[[patterns]]
+begin = "<!\\[CDATA\\["
+end = "\\]\\]>"
+name = "string.unquoted.cdata.xml"
+
+[[patterns]]
+begin = "<\\?"
+end = "\\?>"
+name = "meta.tag.preprocessor.xml"
+[[patterns.patterns]]
+include = "#django-stuff"
+[[patterns.patterns]]
+include = "#tag-generic-attribute"
+[[patterns.patterns]]
+include = "#string-double-quoted"
+[[patterns.patterns]]
+include = "#string-single-quoted"
+
+[[patterns]]
+begin = "<!DOCTYPE\\b"
+end = ">"
+name = "meta.tag.sgml.doctype.xml"
+[[patterns.patterns]]
+include = "#string-double-quoted"
+[[patterns.patterns]]
+include = "#string-single-quoted"
+
+[[patterns]]
+begin = "(</?)([a-zA-Z_:][a-zA-Z0-9:._-]*)"
+end = "(/?>)"
+name = "meta.tag.xml"
+[[patterns.patterns]]
+include = "#django-stuff"
+[[patterns.patterns]]
+include = "#tag-generic-attribute"
+[[patterns.patterns]]
+include = "#string-double-quoted"
+[[patterns.patterns]]
+include = "#string-single-quoted"
+[patterns.beginCaptures.1]
+name = "punctuation.definition.tag.begin.xml"
+[patterns.beginCaptures.2]
+name = "entity.name.tag.xml"
+[patterns.endCaptures.1]
+name = "punctuation.definition.tag.end.xml"
+
+[[patterns]]
+include = "#entities"

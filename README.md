@@ -19,8 +19,7 @@ to jump to this template
 
 ### Improved syntax
 
-- Adds the filetype `django-html`
-- Adds the filetype `django-txt` for email templates.
+- Adds the filetype `django-html`, `django-xml` and `django-txt` for Django templates
 - Better syntax with more operators and default keywords:
   - Known default tags and filters
   - Known templatetags namespace from contrib in the {% load %} tag

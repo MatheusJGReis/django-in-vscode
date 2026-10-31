@@ -9,5 +9,8 @@ name = "punctuation.definition.string.begin.html"
 name = "punctuation.definition.string.end.html"
 
 [[patterns]]
+include = "#django-stuff"
+
+[[patterns]]
 include = "#entities"
 

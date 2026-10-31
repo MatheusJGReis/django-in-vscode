@@ -1,5 +1,5 @@
 {
-  "name": "Django txt",
+  "name": "Django Text",
   "scopeName": "text.django",
   "fileTypes": [
     "txt"
@@ -211,6 +211,9 @@
       "end": "'",
       "name": "string.quoted.single.html",
       "patterns": [
+        {
+          "include": "#django-stuff"
+        },
         {
           "include": "#entities"
         }
